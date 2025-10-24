@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import type { AppProps } from "next/app";
-import "swiper/css";
-import "swiper/css/navigation";
 import "../styles/css/bootstrap.min.css";
-import "../styles/css/aos.css";
 import "../styles/css/style.css";
 import "../styles/globals.css";
 
@@ -11,30 +8,50 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
+    // Ensure DOM is ready
+    const handleLoad = () => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 1500);
+      return () => clearTimeout(timer);
+    };
 
-    return () => clearTimeout(timer);
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
+    }
+  }, []);
+
+  // Force loading to false after 3 seconds as fallback
+  useEffect(() => {
+    const fallbackTimer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(fallbackTimer);
   }, []);
 
   return (
     <>
       {loading ? (
-        <div id="preloader">
-          <div className="preloader-loaded light">
-            <div className="text-preloader-outer">
-              <div className="text-preloading">
-                {["S", "F", "B", " ", "M", "A", "R", "K", "E", "T", "I", "N", "G"].map((letter, i) => (
-                  <span key={i} className="text-split" data-text={letter}>
-                    {letter}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="preloader-slide slide-left"></div>
-            <div className="preloader-slide slide-right"></div>
-          </div>
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundColor: '#ffffff',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 9999,
+          fontSize: '2rem',
+          fontWeight: 'bold',
+          color: '#a3e635'
+        }}>
+          SFB MARKETING
         </div>
       ) : (
         <Component {...pageProps} />
