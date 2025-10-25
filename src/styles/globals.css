@@ -13,6 +13,7 @@
   margin-bottom: 1.5rem !important;
 }
 
+/* Subtitle Styling */
 .banner-section-one .subtitle {
   font-size: 1.5rem !important;
   font-weight: 500 !important;
@@ -20,34 +21,54 @@
   margin: 1.5rem 0 !important;
   line-height: 1.7 !important;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* ✅ Tagline Updated — White Color */
 .banner-section-one .tagline {
   font-size: 1.3rem !important;
   font-weight: 600 !important;
-  color: #a3e635 !important;
+  color: #e5e7eb !important;
   margin: 1.5rem 0 !important;
   letter-spacing: 0.5px;
 }
 
-.banner-section-one .hero-features {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+.banner-section-one .tagline strong{
+  color: #e5e7eb !important;
 }
 
+/* ✅ Hero Features Centered Horizontally */
+.banner-section-one .hero-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem !important;
+  margin-top: 2rem !important;
+  text-align: center;
+}
+
+/* Hero Feature Items */
 .banner-section-one .feature-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: #d1d5db;
-  font-weight: 500;
-  font-size: 1rem;
+  justify-content: center;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  padding: 1rem 1.5rem !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 25px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(4px);
 }
 
-.banner-section-one .feature-icon {
-  font-size: 1.2rem;
+.banner-section-one .feature-item:hover {
+  background: #a3e635 !important;
+  color: #000000 !important;
+  transform: scale(1.05);
 }
 
 /* Larger About Section Title */
@@ -110,7 +131,7 @@
 }
 
 .page-title .breadcrumb li:after {
-  content: '/';
+  content: "/";
   margin-left: 10px;
   color: #6b7280;
 }
@@ -242,37 +263,37 @@
   .banner-section-one .title {
     font-size: 3.2rem !important;
   }
-  
+
   .banner-section-one .subtitle {
     font-size: 1.2rem !important;
   }
-  
+
   .banner-section-one .hero-features {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .about-section-six .sec-title .title {
     font-size: 2.8rem !important;
   }
-  
+
   .about-section-six .sec-title .sub-title {
     font-size: 1.1rem !important;
   }
-  
+
   .service-sidebar {
     padding-left: 0;
     margin-top: 2rem;
   }
-  
+
   .page-title .title {
     font-size: 2rem;
   }
-  
+
   .main-header .logo img {
     height: 45px !important;
   }
-  
+
   .sticky-header .logo img {
     height: 40px !important;
   }
@@ -297,34 +318,6 @@
   font-size: 1.15rem !important;
   line-height: 1.7 !important;
   font-weight: 400 !important;
-}
-
-/* Hero Section Enhanced Styling */
-.banner-section-one .subtitle {
-  font-size: 1.35rem !important;
-  line-height: 1.8 !important;
-  font-weight: 500 !important;
-  margin-bottom: 2rem !important;
-}
-
-.banner-section-one .tagline {
-  font-size: 1.25rem !important;
-  margin-bottom: 2.5rem !important;
-  color: #a3e635 !important;
-}
-
-.banner-section-one .hero-features {
-  gap: 1.5rem !important;
-  margin-top: 2rem !important;
-}
-
-.banner-section-one .feature-item {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-  padding: 1rem 1.5rem !important;
-  background: rgba(163, 230, 53, 0.1) !important;
-  border-radius: 8px !important;
-  border-left: 4px solid #a3e635 !important;
 }
 
 /* Service Pages Text Color Fix */
@@ -378,4 +371,126 @@
 
 .nav-logo .logo-text {
   font-size: 1.8rem !important;
+}
+
+
+/* Button container */
+.theme-btn.btn-style-four {
+  display: inline-block;            /* keep block-level for link layout */
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 0;                       /* inner spacing handled by .btn-inner */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.18);
+  background: linear-gradient(135deg, #a3e635 0%, #84cc16 100%);
+}
+
+/* Inner wrapper to control alignment precisely */
+.theme-btn.btn-style-four .btn-inner {
+  display: inline-flex;
+  align-items: center;              /* vertical centering */
+  justify-content: center;          /* horizontal centering */
+  gap: 10px;                        /* space between text and dot */
+  padding: 12px 28px;               /* the visible padding */
+  color: #1f2937;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;                   /* prevents baseline shift */
+  border-radius: 50px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Title text */
+.theme-btn.btn-style-four .btn-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+
+/* dot wrapper */
+.theme-btn.btn-style-four .dot-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;                      /* keeps consistent box even if dot animates */
+  height: 30px;
+}
+
+
+
+/* hover states */
+.theme-btn.btn-style-four:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(163, 230, 53, 0.28);
+}
+
+.theme-btn.btn-style-four:hover .btn-inner {
+  color: #ffffff;
+}
+
+.theme-btn.btn-style-four:hover .dot-item {
+  background-color: #ffffff;
+}
+
+/* keep responsive */
+@media (max-width: 576px) {
+  .theme-btn.btn-style-four .btn-inner {
+    padding: 10px 18px;
+    gap: 8px;
+    font-size: 0.95rem;
+  }
+  .theme-btn.btn-style-four .dot-box {
+    width: 14px;
+    height: 14px;
+  }
+  .theme-btn.btn-style-four .dot-item {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+/* dot animation */
+@keyframes btn-dot-blink {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+
+/* Work Section Image Styling */
+.work-section .image-box img {
+  width: 100%;
+  border-radius: 20px; /* ✅ Rounded corners */
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover Animation */
+.work-section .image-box:hover img {
+  transform: scale(1.08) rotate(1deg); /* subtle zoom & tilt */
+  box-shadow: 0 12px 24px rgba(163, 230, 53, 0.35); /* matches SFB green accent */
+}
+
+/* Smooth transition for layout harmony */
+.work-section .image-box {
+  overflow: hidden;
+  border-radius: 20px; /* keeps image corners smooth during animation */
+}
+
+@keyframes float-up {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.work-section .image-box:hover img {
+  animation: float-up 1s ease-in-out infinite;
+}
+
+
+.footer-bottom .inner-container {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;     /* center horizontally */
+  text-align: center;      /* center text */
+  gap: 0.5rem;             /* add spacing between lines */
 }

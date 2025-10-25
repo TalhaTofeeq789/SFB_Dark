@@ -19,8 +19,8 @@ export default function Section1() {
                   <div className="inner-box">
                     <div className="title-box">
                       <h1 className="title tm-split-text split-in-right">
-                        Smart Marketing.<img className="shape-image-2" src="assets/images/icons/shape-style3.png" alt="" /> <br />
-                        Real <span><img className="shape-image-1" src="assets/images/icons/shape-style2.png" alt="" /> Growth.</span>
+                        Smart Marketing<img className="shape-image-2" src="assets/images/icons/shape-style3.png" alt="" /> <br />
+                        Real <span><img className="shape-image-1" src="assets/images/icons/shape-style2.png" alt="" /> </span>Growth
                       </h1>
                       <p className="subtitle">We help ambitious brands scale faster by combining elite sales talent, strategic social media management, and high-converting performance marketing campaigns—all under one roof.</p>
                       <div className="tagline">
@@ -39,7 +39,9 @@ export default function Section1() {
                       </div>
                     </div>
                     <div className="image-box">
-                      <figure className="image-1 anim-fade-move" data-fade-from="right"><img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Marketing Team" /></figure>
+                      <figure className="image-1 anim-fade-move" data-fade-from="right">
+                        <img src="https://images.unsplash.com/photo-1553028826-f4804a6dba3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Marketing Team" />
+                      </figure>
                     </div>
                   </div>
                 </div>

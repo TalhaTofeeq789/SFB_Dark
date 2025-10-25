@@ -25,7 +25,7 @@ export default function Section2() {
               About SFB Marketing
             </span>
             <h2 className="title anim-text-flip-move">
-              We don't do guesswork. <span className="color1">We build systems.</span>
+              <span className="color1">We don't do guesswork. <br/>We build systems.</span>
             </h2>
           </div>
           <div className="row">
@@ -41,9 +41,11 @@ export default function Section2() {
                   </div>
                   <div className="user-info-box anim-fade-move">
                     <Link href="/page-about" className="theme-btn btn-style-four">
-                      <span className="btn-title">Read More</span>
-                      <span className="dot-box">
-                        <span className="dot-item"></span>
+                      <span className="btn-inner">
+                        <span className="btn-title">Read More</span>
+                        <span className="dot-box">
+                          <span className="dot-item"></span>
+                        </span>
                       </span>
                     </Link>
                   </div>

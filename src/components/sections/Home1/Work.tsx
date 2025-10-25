@@ -71,12 +71,15 @@ function WorkSection() {
 
         <div className="bottom-text text-center anim-fade-move" data-fade-from="bottom">
           <h3>You're in the right place.</h3>
+          
           <Link href="/page-contact" className="theme-btn btn-style-four">
-            <span className="btn-title">Let's Talk</span>
-            <span className="dot-box">
-              <span className="dot-item"></span>
-            </span>
-          </Link>
+                      <span className="btn-inner">
+                        <span className="btn-title">Let's Talk</span>
+                        <span className="dot-box">
+                          <span className="dot-item"></span>
+                        </span>
+                      </span>
+            </Link>
         </div>
       </div>
     </section>

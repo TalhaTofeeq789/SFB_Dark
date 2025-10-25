@@ -102,6 +102,10 @@ function Footer (){
               <p className="copyright-text">
                 © {new Date().getFullYear()} All rights reserved by SFB Marketing. Privacy Policy.
               </p>
+              
+              <p className="copyright-text">
+                Designed by AICE XPERT pvt ltd
+              </p>
             </div>
           </div>
         </div>
