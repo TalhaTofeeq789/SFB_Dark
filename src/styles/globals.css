@@ -494,3 +494,43 @@
   text-align: center;      /* center text */
   gap: 0.5rem;             /* add spacing between lines */
 }
+
+/* ================================
+   Header Nav Link Hover Animation
+   ================================ */
+
+/* Smooth transition setup */
+.main-menu ul li a {
+  display: inline-block;
+  position: relative;
+  color: #ffffff; /* Adjust if your header background is light */
+  font-weight: 500;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+/* Hover Effect: Vibration (Shake) */
+.main-menu ul li a:hover {
+  color: #a3e635; /* Your brand green accent */
+  animation: vibrate 0.25s linear infinite;
+}
+
+/* Keyframes for the vibration effect */
+@keyframes vibrate {
+  0% { transform: translate(0); }
+  20% { transform: translate(-1px, 1px); }
+  40% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  100% { transform: translate(0); }
+}
+
+/* Optional: Stop vibration if hovered for too long (more subtle) */
+.main-menu ul li a:hover {
+  animation: vibrate 0.25s linear 3; /* vibrates 3 times only */
+}
+
+.main-menu ul li a:hover {
+  color: #a3e635;
+  animation: vibrate 0.25s linear 3;
+  text-shadow: 0 0 6px rgba(163, 230, 53, 0.7);
+}

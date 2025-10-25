@@ -21,12 +21,12 @@ const MobileMenu: React.FC = () => {
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="/page-about">About</Link>
+        <Link href="/#">About</Link>
       </li>
       <li className="dropdown">
         <Link href="#">Services</Link>
         <ul className={isActive.key === "services" ? "sub-menu d-block" : "d-none"}>
-          <li><Link href="/service-talent-placement">Prospect-to-Placement Program</Link></li>
+          <li><Link href="/service-talent-placement">Prospect to Placement Program</Link></li>
           <li><Link href="/service-social-media">Social Media Growth & Management</Link></li>
           <li><Link href="/service-paid-advertising">Paid Advertising Campaigns</Link></li>
           <li><Link href="/service-account-setup">Business Account Setup</Link></li>
@@ -42,7 +42,7 @@ const MobileMenu: React.FC = () => {
         </div>
       </li>
       <li>
-        <Link href="/page-contact">Contact</Link>
+        <Link href="/#">Contact</Link>
       </li>
     </ul>
   );

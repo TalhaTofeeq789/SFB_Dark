@@ -18,10 +18,10 @@ const NavLinks = () => {
             </ul>
             */}
         </li>
-        <li><Link href="/page-about">About</Link></li>                  
+        <li><Link href="/#">About</Link></li>                  
         <li className="dropdown"><Link href="#">Services</Link>
             <ul>
-            <li><Link href="/service-talent-placement">Prospect-to-Placement Program</Link></li>
+            <li><Link href="/service-talent-placement">Prospect to Placement Program</Link></li>
             <li><Link href="/service-social-media">Social Media Growth & Management</Link></li>
             <li><Link href="/service-paid-advertising">Paid Advertising Campaigns</Link></li>
             <li><Link href="/service-account-setup">Business Account Setup</Link></li>
@@ -31,11 +31,11 @@ const NavLinks = () => {
         </li>
         <li className="dropdown"><Link href="#">Projects</Link>
             <ul>
-            <li><Link href="/page-project">Projects</Link></li>
-            <li><Link href="page-project-details">Project Details</Link></li>
+            <li><Link href="/#">Projects</Link></li>
+            <li><Link href="/#">Project Details</Link></li>
             </ul>
         </li>                                   
-        <li><Link href="/page-contact">Contact</Link></li>
+        <li><Link href="/#">Contact</Link></li>
     </ul>
 
     );
