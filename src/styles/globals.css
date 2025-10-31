@@ -645,6 +645,23 @@ label .required, label .asterisk { color: var(--error); }
 }
 
 
+/* Contact page cards */
+.contact-card {
+  background: var(--bg-cream);
+  border: 1px solid var(--bg-darker-beige);
+  border-radius: 10px;
+  box-shadow: var(--shadow-small);
+}
+.contact-card:hover {
+  background: var(--bg-olive-tint);
+  box-shadow: var(--shadow-medium);
+}
+.contact-card__icon {
+  font-size: 26px;
+  color: var(--olive-primary);
+}
+
+
 /* Button container */
 .theme-btn.btn-style-four {
   display: inline-block;            /* keep block-level for link layout */

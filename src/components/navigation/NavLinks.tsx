@@ -35,7 +35,7 @@ const NavLinks = () => {
             <li><Link href="/#">Project Details</Link></li>
             </ul>
         </li>                                   
-        <li><Link href="/#">Contact</Link></li>
+    <li><Link href="/page-contact">Contact</Link></li>
     </ul>
 
     );
