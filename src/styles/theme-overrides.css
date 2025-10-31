@@ -1,0 +1,358 @@
+/* ===================================================================
+   COMPLETE BEIGE & OLIVE THEME OVERRIDES FOR TEMPLATE
+   This file overrides ALL template CSS variables with the new palette
+   =================================================================== */
+
+:root {
+  /* Override all template theme colors */
+  --theme-color1: #84854F !important;         /* Primary Olive */
+  --theme-color1-rgb: 132, 133, 79 !important;
+  --theme-color1-dark: #6E6F42 !important;    /* Medium Olive */
+  --theme-color2: #5A5B38 !important;         /* Dark Olive */
+  --theme-color3: #E8E5C8 !important;         /* Medium Beige */
+  --theme-color4: #DED9B8 !important;         /* Darker Beige */
+  --theme-color5: #F6F4D8 !important;         /* Primary Beige */
+  --theme-color6: #A5A678 !important;         /* Light Olive */
+  --theme-color6-rgb: 165, 166, 120 !important;
+  --theme-color7: #FEFDF5 !important;         /* Lightest Cream */
+  --theme-color8: #8B8C5F !important;         /* Medium Light Olive */
+  --theme-color9: #D4C89F !important;         /* Warm Beige */
+  --theme-color10: #beige-olive-light !important; /* Light Olive-Beige */
+  --theme-color11: #6E6F42 !important;        /* Medium Olive */
+  --theme-color12: #DED9B8 !important;        /* Darker Beige */
+  --theme-color13: #9D7654 !important;        /* Warm Brown (error) */
+  --theme-color14: #464729 !important;        /* Darker Olive */
+  --theme-color15: #A5A678 !important;        /* Light Olive */
+  
+  /* Override white/black */
+  --theme-color-white: #FEFDF5 !important;
+  --theme-color-white-rgb: 254, 253, 245 !important;
+  --theme-color-lighter: #F6F4D8 !important;
+  --theme-color-lighter2: #E8E5C8 !important;
+  --theme-color-black: #32331D !important;     /* Almost Black Olive */
+  --theme-color-black-rgb: 50, 51, 29 !important;
+  --theme-color-dark: #3D3E24 !important;      /* Deepest Olive */
+  --theme-color-gray: #5A5B38 !important;      /* Dark Olive instead of gray */
+  
+  /* Override text colors */
+  --text-color: #5A5B38 !important;           /* Dark Olive */
+  --text-color2: #6E6F42 !important;          /* Medium Olive */
+  --headings-color: #3D3E24 !important;       /* Deepest Olive */
+  --link-color: #84854F !important;           /* Primary Olive */
+  --link-hover-color: #5A5B38 !important;     /* Dark Olive */
+  
+  /* Override gradients */
+  --gradient-1: linear-gradient(0deg, rgba(246, 244, 216, 0) 0%, rgb(132, 133, 79) 100%) !important;
+  --gradient-2: linear-gradient(0deg, rgba(246, 244, 216, 0) 0%, rgb(132, 133, 79) 100%) !important;
+  --gradient-3: linear-gradient(180deg, #84854F -10%, rgba(132, 133, 79, 0) 90%) !important;
+  --gradient-4: linear-gradient(180deg, rgba(132, 133, 79, 0) 0%, rgba(132, 133, 79, 0.5) 100%) !important;
+  --gradient-5: linear-gradient(180deg, #84854F 0%, rgba(107, 142, 35, 0) 100%) !important;
+  --gradient-6: linear-gradient(180deg, #E8E5C8 0%, rgba(232, 229, 200, 0.3) 45%, #E8E5C8 90%) !important;
+  --gradient-7: linear-gradient(180deg, rgba(132, 133, 79, 0.7) 37.5%, rgba(246, 244, 216, 0) 100%) !important;
+  --gradient-8: linear-gradient(257.6deg, rgba(61, 62, 36, 0.4) 0.17%, rgba(50, 51, 29, 0.4) 99.83%) !important;
+  --gradient-9: linear-gradient(#FEFDF5 0 0) content-box, linear-gradient(#FEFDF5 0 0) !important;
+  
+  /* Override review/rating color */
+  --review-color: #C9A961 !important;         /* Muted Gold */
+
+  /* Text color used on top of theme-color1 surfaces in template components */
+  /* Original template set this to pure black (#000), which fails our palette + contrast goals */
+  --text-color-theme-color1: #FEFDF5 !important; /* Lightest cream for high contrast on olive */
+}
+
+/* Force override any remaining blue/purple/gray colors in template */
+* {
+  /* Remove any blue focus rings */
+  --bs-blue: #84854F !important;
+  --bs-indigo: #84854F !important;
+  --bs-purple: #84854F !important;
+  --bs-pink: #C9A961 !important;
+  --bs-cyan: #84854F !important;
+  --bs-teal: #6B8E23 !important;
+  
+  /* Override grays with beige/olive equivalents */
+  --bs-gray: #A5A678 !important;
+  --bs-gray-dark: #5A5B38 !important;
+  --bs-gray-100: #FEFDF5 !important;
+  --bs-gray-200: #F6F4D8 !important;
+  --bs-gray-300: #F0F0E0 !important;
+  --bs-gray-400: #E8E5C8 !important;
+  --bs-gray-500: #DED9B8 !important;
+  --bs-gray-600: #A5A678 !important;
+  --bs-gray-700: #6E6F42 !important;
+  --bs-gray-800: #5A5B38 !important;
+  --bs-gray-900: #464729 !important;
+  
+  /* Override Bootstrap primary/secondary */
+  --bs-primary: #84854F !important;
+  --bs-primary-rgb: 132, 133, 79 !important;
+  --bs-secondary: #E8E5C8 !important;
+  --bs-secondary-rgb: 232, 229, 200 !important;
+  --bs-success: #6B8E23 !important;
+  --bs-success-rgb: 107, 142, 35 !important;
+  --bs-warning: #C9A961 !important;
+  --bs-warning-rgb: 201, 169, 97 !important;
+  --bs-danger: #9D7654 !important;
+  --bs-danger-rgb: 157, 118, 84 !important;
+  --bs-info: #84854F !important;
+  --bs-info-rgb: 132, 133, 79 !important;
+  --bs-light: #F6F4D8 !important;
+  --bs-dark: #3D3E24 !important;
+  
+  /* Override body colors */
+  --bs-body-color: #5A5B38 !important;
+  --bs-body-color-rgb: 90, 91, 56 !important;
+  --bs-body-bg: #F6F4D8 !important;
+  --bs-body-bg-rgb: 246, 244, 216 !important;
+  --bs-emphasis-color: #3D3E24 !important;
+  --bs-emphasis-color-rgb: 61, 62, 36 !important;
+  
+  /* Override link colors */
+  --bs-link-color: #84854F !important;
+  --bs-link-color-rgb: 132, 133, 79 !important;
+  --bs-link-hover-color: #5A5B38 !important;
+  --bs-link-hover-color-rgb: 90, 91, 56 !important;
+  
+  /* Override borders */
+  --bs-border-color: #DED9B8 !important;
+  --bs-border-color-translucent: rgba(132, 133, 79, 0.175) !important;
+  
+  /* Override shadows */
+  --bs-box-shadow: 0 0.5rem 1rem rgba(132, 133, 79, 0.15) !important;
+  --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(132, 133, 79, 0.075) !important;
+  --bs-box-shadow-lg: 0 1rem 3rem rgba(132, 133, 79, 0.175) !important;
+  --bs-box-shadow-inset: inset 0 1px 2px rgba(132, 133, 79, 0.075) !important;
+  
+  /* Override focus ring */
+  --bs-focus-ring-color: rgba(132, 133, 79, 0.25) !important;
+  
+  /* Override form colors */
+  --bs-form-valid-color: #6B8E23 !important;
+  --bs-form-valid-border-color: #6B8E23 !important;
+  --bs-form-invalid-color: #9D7654 !important;
+  --bs-form-invalid-border-color: #9D7654 !important;
+}
+
+/* Override any remaining hardcoded colors in common elements */
+a:not([class]) {
+  color: var(--olive-primary);
+}
+a:not([class]):hover {
+  color: var(--olive-dark);
+}
+
+/* Override selection colors */
+::-moz-selection {
+  background: var(--olive-primary);
+  color: var(--text-inverse);
+}
+::selection {
+  background: var(--olive-primary);
+  color: var(--text-inverse);
+}
+
+/* Override placeholder colors */
+::-webkit-input-placeholder {
+  color: var(--olive-light) !important;
+}
+::-moz-input-placeholder {
+  color: var(--olive-light) !important;
+}
+::-ms-input-placeholder {
+  color: var(--olive-light) !important;
+}
+::placeholder {
+  color: var(--olive-light) !important;
+}
+
+/* Override focus outlines globally */
+*:focus {
+  outline-color: var(--olive-primary) !important;
+}
+*:focus-visible {
+  outline-color: var(--olive-primary) !important;
+  box-shadow: 0 0 0 3px rgba(132, 133, 79, 0.2) !important;
+}
+
+/* Override any button defaults */
+button:not([class]),
+input[type="button"]:not([class]),
+input[type="submit"]:not([class]),
+input[type="reset"]:not([class]) {
+  background-color: var(--olive-primary);
+  color: var(--text-inverse);
+  border-color: var(--olive-primary);
+}
+button:not([class]):hover,
+input[type="button"]:not([class]):hover,
+input[type="submit"]:not([class]):hover,
+input[type="reset"]:not([class]):hover {
+  background-color: var(--olive-medium);
+  border-color: var(--olive-medium);
+}
+
+/* Override hr/divider colors */
+hr {
+  border-color: var(--beige-darker) !important;
+  opacity: 1;
+}
+
+/* Override code blocks */
+code:not([class]) {
+  background-color: var(--beige-medium);
+  color: var(--olive-dark);
+  border: 1px solid var(--olive-very-light);
+}
+pre:not([class]) {
+  background-color: var(--beige-lightest);
+  border: 1px solid var(--olive-very-light);
+  color: var(--olive-deepest);
+}
+
+/* Override blockquote */
+blockquote {
+  border-left: 4px solid var(--olive-primary);
+  background: var(--beige-lightest);
+  color: var(--olive-dark);
+}
+
+/* Override mark/highlight */
+mark,
+.mark {
+  background-color: var(--warning-bg);
+  color: var(--olive-deepest);
+}
+
+/* Override kbd (keyboard) */
+kbd {
+  background-color: var(--olive-dark);
+  color: var(--text-inverse);
+  border: 1px solid var(--olive-darker);
+}
+
+/* Override any SVG icon fills that might be hardcoded */
+svg:not([class]) path {
+  fill: currentColor;
+}
+
+/* Override any remaining dark backgrounds */
+.bg-dark,
+[class*="bg-dark"] {
+  background-color: var(--beige-medium) !important;
+  color: var(--olive-dark) !important;
+}
+
+.text-dark {
+  color: var(--olive-dark) !important;
+}
+
+.text-light {
+  color: var(--olive-light) !important;
+}
+
+.bg-light {
+  background-color: var(--beige-lightest) !important;
+}
+
+/* Override text-muted */
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Override any card defaults */
+.card:not([class*="bg-"]) {
+  background-color: var(--beige-lightest);
+  border-color: var(--beige-darker);
+}
+.card-header {
+  background-color: var(--beige-primary);
+  border-bottom-color: var(--beige-darker);
+}
+.card-footer {
+  background-color: var(--beige-primary);
+  border-top-color: var(--beige-darker);
+}
+
+/* Override list group */
+.list-group-item {
+  background-color: var(--beige-lightest);
+  border-color: var(--beige-darker);
+  color: var(--olive-dark);
+}
+.list-group-item.active {
+  background-color: var(--olive-primary);
+  border-color: var(--olive-primary);
+  color: var(--text-inverse);
+}
+.list-group-item:hover {
+  background-color: var(--bg-olive-tint);
+}
+
+/* Override nav tabs/pills */
+.nav-tabs .nav-link.active {
+  background-color: var(--beige-primary);
+  border-color: var(--beige-darker) var(--beige-darker) var(--beige-primary);
+  color: var(--olive-deepest);
+}
+.nav-tabs {
+  border-bottom-color: var(--beige-darker);
+}
+.nav-link {
+  color: var(--olive-primary);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--olive-dark);
+}
+
+/* Override progress bars */
+.progress {
+  background-color: var(--beige-medium);
+}
+.progress-bar {
+  background-color: var(--olive-primary);
+}
+
+/* Override spinners/loaders */
+.spinner-border,
+.spinner-grow {
+  color: var(--olive-primary);
+  border-color: var(--olive-primary);
+}
+
+/* Override close buttons */
+.btn-close {
+  filter: invert(35%) sepia(12%) saturate(1000%) hue-rotate(60deg) brightness(95%) contrast(90%);
+}
+.btn-close:hover {
+  opacity: 0.75;
+}
+
+/* ===================================================================
+   NAVBAR SPECIFIC OVERRIDES
+   Force navbar text to be olive green and remove underlines
+   =================================================================== */
+
+/* Main navigation styles - highest specificity */
+.main-menu .navigation > li > a,
+.main-menu ul li a {
+  color: #84854F !important;  /* Olive Green */
+  text-decoration: none !important;
+}
+
+.main-menu .navigation > li > a:hover,
+.main-menu ul li a:hover {
+  color: #5A5B38 !important;  /* Dark Olive on hover */
+  text-decoration: none !important;
+}
+
+/* Mobile navigation */
+.mobile-menu .navigation a {
+  color: #84854F !important;
+  text-decoration: none !important;
+}
+
+.mobile-menu .navigation a:hover {
+  color: #5A5B38 !important;
+  text-decoration: none !important;
+}
